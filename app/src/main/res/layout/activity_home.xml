@@ -7,13 +7,27 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
 
-  <TextView
-      android:id="@+id/btnLogout"
-      android:layout_width="wrap_content"
+
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/nav_bottom"
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="LogOut"
+      android:background="#7097A8"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:menu="@menu/bottom_menu">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav"/>
+
+  </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

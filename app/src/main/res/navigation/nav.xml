@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/lari_fragment">
+
+    <fragment
+        android:id="@+id/lari_fragment"
+        android:name="com.example.projectaplikasibergerak.lari_fragment"
+        android:label="Let's Run"
+        tools:layout="@layout/fragment_lari" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.projectaplikasibergerak.setting"
+        android:label="Pengaturan"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/statistik"
+        android:name="com.example.projectaplikasibergerak.statistik"
+        android:label="Data Statistik"
+        tools:layout="@layout/fragment_statistik" />
+    <fragment
+        android:id="@+id/tracking"
+        android:name="com.example.projectaplikasibergerak.tracking"
+        android:label="Data Tracking"
+        tools:layout="@layout/fragment_tracking" />
+</navigation>
